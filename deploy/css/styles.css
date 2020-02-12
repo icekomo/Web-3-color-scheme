@@ -6,6 +6,7 @@ html {
   font-size: 100%; }
 
 /* ---------------- Media Queries ---------------- */
+/* ---------------- Light and Dark Media Quires ----------------  */
 /* =============
     Variables
 ============= */
@@ -311,20 +312,28 @@ template {
 /* =============
     Base
 ============= */
-figure {
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff; } }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000; } }
+
+body figure {
   margin: 0;
   padding: 0; }
 
-ul {
+body ul {
   margin: 0;
   padding: 0; }
-  ul li {
+  body ul li {
     list-style: none; }
 
-.section-content {
+body .section-content {
   padding: 40px 0; }
   @media (min-width: 768px) {
-    .section-content {
+    body .section-content {
       padding: 50px 0; } }
 
 /* =============
@@ -345,6 +354,12 @@ p {
   @media (min-width: 992px) {
     p {
       line-height: 1.875rem; } }
+  @media (prefers-color-scheme: light) {
+    p {
+      color: #000; } }
+  @media (prefers-color-scheme: dark) {
+    p {
+      color: #fff; } }
 
 /* =============
     Buttons
@@ -367,6 +382,14 @@ textarea {
 /* =============
     Navigation
 ============= */
+#toggle {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  padding: 30px; }
+
 /* =============
     Header
 ============= */
@@ -484,6 +507,12 @@ footer {
         @media (min-width: 1200px) {
           #believe > div section div article h1 {
             font-size: 2.5rem; } }
+        @media (prefers-color-scheme: light) {
+          #believe > div section div article h1 {
+            color: #000; } }
+        @media (prefers-color-scheme: dark) {
+          #believe > div section div article h1 {
+            color: #fff; } }
       #believe > div section div article p {
         font-size: 1rem; }
         @media (min-width: 992px) {

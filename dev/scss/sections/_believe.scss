@@ -58,6 +58,14 @@
                         @include xl{
                             font-size: rem-calc(40);
                         }
+
+                        @include light{
+                            color: $black;
+                        }
+
+                        @include dark{
+                            color: $white;
+                        }
                     }
 
                     p {

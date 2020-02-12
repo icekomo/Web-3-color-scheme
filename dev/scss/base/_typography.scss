@@ -20,4 +20,12 @@ p{
     @include lg{
         line-height: rem-calc(30);
     }
+
+    @include light{
+        color: $black;
+    }
+
+    @include dark{
+        color: $white;
+    }
 }
