@@ -558,6 +558,14 @@ footer {
       #everything > div {
         margin: 0 auto;
         width: 55%; } }
+    @media (prefers-color-scheme: light) {
+      #everything > div {
+        border-bottom: 3px solid #000;
+        border-top: 3px solid #000; } }
+    @media (prefers-color-scheme: dark) {
+      #everything > div {
+        border-bottom: 3px solid #fff;
+        border-top: 3px solid #fff; } }
     #everything > div h1 {
       color: #D87337;
       font-size: 1.6875rem; }

@@ -26,6 +26,16 @@
             width: 55%;
         }
 
+        @include light{
+            border-bottom: 3px solid $black;
+            border-top: 3px solid $black;
+        }
+
+        @include dark{
+            border-bottom: 3px solid $white;
+            border-top: 3px solid $white;
+        }
+
         h1 {
             color: $rust;
             font-size: rem-calc(27);
